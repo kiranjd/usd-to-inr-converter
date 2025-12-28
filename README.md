@@ -19,7 +19,7 @@ A Chrome extension that automatically detects USD dollar amounts on any webpage 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/usd-to-inr-converter.git
+   git clone https://github.com/kiranjd/usd-to-inr-converter.git
    ```
 
 2. Open Chrome and navigate to `chrome://extensions/`
