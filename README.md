@@ -2,7 +2,7 @@
 
 A Chrome extension that automatically detects USD dollar amounts on any webpage and shows the INR (Indian Rupee) conversion on hover.
 
-![Demo](demo.png)
+https://github.com/user-attachments/assets/8a82b0c8-1fcd-487e-8a6f-5d3ad1525572
 
 ## Features
 
