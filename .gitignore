@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build output (if using bundler)
+dist/
+build/
+node_modules/
+
+# Chrome extension package
+*.zip
+*.crx
+*.pem
+
+# Logs
+*.log

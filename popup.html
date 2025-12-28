@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 280px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #ffffff;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .rate-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .rate-label {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .rate-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #4ade80;
+    }
+
+    .rate-currency {
+      font-size: 14px;
+      color: #a0a0a0;
+      margin-top: 4px;
+    }
+
+    .last-updated {
+      font-size: 11px;
+      color: #666;
+      margin-top: 12px;
+    }
+
+    .refresh-btn {
+      width: 100%;
+      padding: 12px;
+      background: #4a90d9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .refresh-btn:hover {
+      background: #3a7bc8;
+    }
+
+    .refresh-btn:disabled {
+      background: #555;
+      cursor: not-allowed;
+    }
+
+    .info {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 11px;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>USD to INR</h1>
+    <p>Hover over $ amounts to convert</p>
+  </div>
+
+  <div class="rate-card">
+    <div class="rate-label">Current Exchange Rate</div>
+    <div class="rate-value" id="rate">--</div>
+    <div class="rate-currency">1 USD = ? INR</div>
+    <div class="last-updated" id="lastUpdated">Loading...</div>
+  </div>
+
+  <button class="refresh-btn" id="refreshBtn">Refresh Rate</button>
+
+  <div class="info">
+    Rates from exchangerate-api.com<br>
+    Updated hourly
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
